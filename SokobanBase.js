@@ -2,16 +2,16 @@
 
 /*   Enum of CSS Classes for the static elements   */
 var Tiles = {
-    Wall: "tile-wall",
-    Space: "tile-space",
-    Goal: "tile-goal",
+    Wall: "tile tile-wall",
+    Space: "tile",
+    Goal: "tile tile-goal"
 };
 
 /*   Enum of CSS Classes for the moving elements   */
 var Entities = {
-    Character: "entity-player",
-    Block: "entity-block",
-    BlockDone: "entity-block-goal",
+    Character: "entity entity-player",
+    Block: "entity entity-block",
+    BlockDone: "entity entity-block-goal"
 };
 
 /*  Legend

@@ -1,0 +1,90 @@
+html,
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    background-image: url("Images/source_space.png");
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-height: 100vh;
+    width: 1024px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapContainer {
+    position: relative;
+    font-size: 0;
+    /* To remove unwanted margin between tile rows*/
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid rgb(163, 177, 36);
+    display: inline-block;
+}
+
+.tile-wall {
+    background-color: #FF5733;
+}
+
+.tile-goal {
+    background-color: darkolivegreen;
+    background-image: url("Images/source_goal_spot.png");
+}
+
+.entity {
+    display: inline-block;
+    background-color: #581845;
+    height: 40px;
+    width: 40px;
+}
+
+.entity-block {
+    background-color: #FFD447;
+    background-image: url("Images/box.jpg");
+}
+
+.entity-block-goal {
+    background-color: rgb(192, 158, 192);
+    background-image: url("Images/boxcomp.jpg");
+}
+
+.entity-player {
+    background-color: green;
+    background-image: url("Images/player.png");
+}
+
+.blackBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    background-color: black;
+    transition: all 0.7s ease-out;
+}
+
+.winText {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFC300;
+    font-size: 0em;
+    position: fixed;
+    margin: 0 auto;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.35s;
+    transition-timing-function: ease-out;
+}

@@ -1,22 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></link>
-    <title>Document</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="SokobanBase.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:900" rel="stylesheet">
+    <title>Sokoban</title>
 </head>
 
 <body>
-    <p> Hello World</p>
+    <h1>Sokoban Game</h1>
 
+    <body onload="gameStart()">
+
+
+        <p>The game has only one level. Hope you will enjoy it. Please send feedback to my email <a href="mailto:salmanhasan@live.se">salmanhasan@live.se</a></p>
+
+        <h3 id="instructions">Use Keyboards Arrows to move, </h3>
+
+        <div id="game-platform">
+        </div>
+
+        <div id="wrapper">
+            <p class="winText">Done!</p>
+            <div id="mapContainer">
+                <div class="blackBox"></div>
+            </div>
+
+        </div>
+    </body>
+
+    <!--End Wrapper-->
+    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <span>All rights reseved @Salman Yahya</span> <br> <br> <br>
+    </footer>
 </body>
-
-
-<script type="module" src="SokobanBase.js"></script>
-<script type="module" src="script.js"></script>
 
 </html>
